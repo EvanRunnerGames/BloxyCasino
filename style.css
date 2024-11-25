@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #151d3e;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: "Changa", sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #5773bc;
+    width: 100%;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-weight: 600;
+    text-shadow: 0 3px 0 rgba(0, 0, 0, 0.15);
+    line-height: 1.2;
+    font-size: 20.5px;
+    background-color: #7787d5;
+    border-bottom: #5969b3 solid 4px;
+    padding-left: 23.5px;
+    padding-right: 23.5px;
+    border-radius: 9.5px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    margin-left: 6px;
+    margin-right: 6px;
+    border: transparent solid 0px;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.confirm {
+    background-color: #77de77;
+    border-color: #0dac6c;
+}
+
+.cancel {
+    background-color: #9b4b58;
+    border-color: #723b3b;
+}
+
+.close {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.agreement {
+    width: 95%;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.agreement-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 9.5px;
+    background-color: #5773bc;
+    min-height: 500px;
+    min-width: 500px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.agreement-options .button {
+    width: 100%;
+}
+
+.agreement-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.agreement-options .button {
+    width: 100%;
+}
+
+.agreement-options .button:hover {
+    transform: scale(1);
+}
+
+.agreement-popup .button {
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+}
+
+.learning-pillow {
+    background-color: yellow;
+    color: black;
+}
+
+.link {
+    color: #77de77;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline wavy;
+    text-decoration-thickness: 2px;
+}
+
+.drop-down-icon {
+    transition: all 0.15s ease-in-out;
+}
+
+.button:hover .drop-down-icon {
+    transform: rotate(-90deg);
+}
+
+.drop-down-icon {
+    margin-left: 10px;
+}
+
+/* Style for the dropdown container */
+.dropdown {
+    position: relative; /* Make the container relative so the dropdown can be positioned relative to it */
+}
+
+/* Hide the dropdown items initially */
+.dropdown-items {
+    display: none; /* Initially hidden */
+    opacity: 0; /* Initially transparent */
+    position: absolute; /* Position it below the button */
+    top: 100%; /* Position it directly below the .dropdown-h */
+    left: 0;
+    width: 100%; /* Make it match the width of the .dropdown-h */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* When hovering over .dropdown-h, show the dropdown items with full opacity */
+.dropdown:hover .dropdown-items {
+    display: block; /* Ensure it's displayed when hovered */
+    opacity: 1; /* Make it fully visible */
+}
+
+/* Style for the dropdown button */
+.dropdown-h {
+    cursor: pointer; /* Make it clear it's clickable */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the dropdown items */
+.dropdown-items a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 0px;
+    border-left: #0dac6c solid 6px;
+}
+
+.dropdown-items a:hover {
+    transform: scale(1);
+    transform: translateX(5px);
+}
